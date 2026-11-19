@@ -14,6 +14,7 @@ Each project is deployed with Terraform and documented with architecture diagram
 - Learn Terraform and Infrastructure as Code
 - Understand and compare how the same concepts are solved on different cloud platforms
 - Document architecture decisions and lessons learned for each project
+- Build everything by ONLY using documentation. No AI tools allowed for diagrams, terraform code etc. 
 
 ## Structure
 
