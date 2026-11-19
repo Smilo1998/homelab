@@ -60,7 +60,7 @@ Each project README describes:
 
 | Project | Description |
 | --- | --- |
-| _Coming soon_ | |
+| [01-vnet-linux-vm](azure/01-vnet-linux-vm/) | Virtual network with an NSG and a Linux VM |
 
 ### AWS
 
