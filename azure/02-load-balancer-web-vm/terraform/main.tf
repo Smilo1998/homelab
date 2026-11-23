@@ -51,6 +51,7 @@ resource "azurerm_subnet" "snet_vm" {
   address_prefixes     = ["10.0.1.0/24"]
 }
 
+# Might need to get better at CIDR Prefixing. Look up cidrsubnet() and cidrsubnets()
 resource "azurerm_subnet" "snet_bastion" {
   name                 = var.snet_azure_bastion_name
   virtual_network_name = azurerm_virtual_network.vnet.name
