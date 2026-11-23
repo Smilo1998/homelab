@@ -30,6 +30,16 @@ resource "azurerm_network_security_group" "nsg" {
     protocol               = "Tcp"
     destination_port_range = "80"
   }
+
+  security_rule {
+    name                   = "AllowSSHFromBastion"
+    priority               = 1001
+    direction              = "Inbound"
+    access                 = "Allow"
+    protocol               = "Tcp"
+    destination_port_range = "22"
+    # Need to put AzureBastions Ip in here somehow
+  }
 }
 
 resource "azurerm_subnet_network_security_group_association" "nsg_link" {
