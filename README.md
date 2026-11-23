@@ -61,6 +61,7 @@ Each project README describes:
 | Project | Description |
 | --- | --- |
 | [01-vnet-linux-vm](azure/01-vnet-linux-vm/) | Virtual network with an NSG and a Linux VM |
+| [02-load-balancer-web-vm](azure/02-load-balancer-web-vm/) | Private web VM (nginx via cloud-init) behind an Azure Load Balancer |
 
 ### AWS
 
