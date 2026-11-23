@@ -27,7 +27,11 @@ The solution consists of:
 | Public IP + network interface | Connects the VM to the subnet and makes it reachable from the internet |
 | Linux virtual machine | Small Ubuntu VM (`Standard_B1s`) with SSH key login |
 
-See [`diagrams/`](diagrams/) for the architecture diagram.
+![Architecture diagram](diagrams/architecture.drawio.svg)
+
+SSH from my own public IP reaches the VM's public IP. The NSG is associated with the subnet and only lets that traffic through. The NIC holds both the public and the private IP and connects the VM to the subnet.
+
+The diagram is made in draw.io. Open `diagrams/architecture.drawio.svg` in draw.io to edit it.
 
 ## Deployment
 
@@ -55,4 +59,6 @@ terraform destroy
 
 ## Lessons learned
 
-_What did I learn? Which challenges did I run into, and what would I do differently?_
+In this project I learned how to set up a basic Azure environment and got hands-on with the fundamentals: virtual networks, subnets and network security groups.
+
+The network interface turned out to be the trickiest part, since it was my first time working with one. The key takeaway is that the network interface card (NIC) is what ties the VM to the network: it holds both the private IP inside the virtual network and the public IP that makes the VM reachable from the internet.
