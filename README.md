@@ -62,6 +62,7 @@ Each project README describes:
 | --- | --- |
 | [01-vnet-linux-vm](azure/01-vnet-linux-vm/) | Virtual network with an NSG and a Linux VM |
 | [02-load-balancer-web-vm](azure/02-load-balancer-web-vm/) | Private web VM (nginx via cloud-init) behind an Azure Load Balancer |
+| [03-hub-and-spoke](azure/03-hub-and-spoke/) | Hub-and-spoke network with VNet peering and a shared Azure Bastion in the hub |
 
 ### AWS
 
